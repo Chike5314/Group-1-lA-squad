@@ -6,3 +6,9 @@ int main(){
     //chike's contribution to this repo that is most important
     printf("The most important aspect of this project\n");
  }
+ int sum(){
+
+ }
+ float multiply(){
+   
+ }
