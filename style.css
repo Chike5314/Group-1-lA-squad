@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, san-serif;
+    color: white;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background-image: url('bus2.jpg');
+    background-size: cover;
+    background-repeat:none;
+    background-position: center;
+}
+
+ #login{
+   width: 60%;
+   height: 70%;
+   margin: 50% auto;
+   padding-left: 20% ;
+   padding-bottom:15px;
+   justify-content: center;
+   align-content: center;
+   background-color: #0a8cc0aa;
+   border:   #0682da33 solid;
+ }
+
+.bus-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+div{
+    padding: 5px;
+    margin: 2px;
+}
+#submit{
+    font-size:15px;
+    color:blue;
+    background-color:white;
+    border:none;
+    width:100px;
+    height:30px;
+    padding-left:50% auto;
+    border-radius:50px;
+}
+ .input{
+    margin: 5% auto;
+    margin-top:0;
+    font-size: 20px;
+ }
+ form{
+    margin:0;
+    padding:0;
+ }
+ label{
+    font-size:20px;
+    margin:0;
+    padding:0;
+ }
+ .hover:hover{
+    color:rgb(41,118,211);
+ }
