@@ -13,20 +13,14 @@
             <img src="logo.png" alt="Bus Logo" class="bus-image">
         </div>
     <h1>LogIn</h1>
-    <form action="/login" method="post" class="form">
-        <div id="user" >
-            <label for="Username">Username</label><br>
-            <input type="text" class="input"required>
-        </div>
-
-        <div id="password" >
-            <label for="password">Password</label><br>
-            <input  class="input" type="password" required>
-        </div>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
         
-       <div>
-        <input type="Submit" id="submit" value="login">
-       </div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <button type="submit">Login</button>
+       
     </form>
     <p>Don't have an account <a class="hover" href="/signup">SignUp</a></p>
     <p><a class="hover" href="/forget-password">Forget Password</a></p>

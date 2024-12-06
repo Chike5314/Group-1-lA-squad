@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, san-serif;
-    color: white;
+    color: black;
 
 }
+
 
 body{
     display: flex;
@@ -62,7 +63,29 @@ div{
     font-size:20px;
     margin:0;
     padding:0;
+    color: white;
  }
  .hover:hover{
     color:rgb(41,118,211);
  }
+
+ 
+ input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h1 {
+    color: white;
+}
