@@ -1,0 +1,9 @@
+body{
+    font-family: Arial, san-serif;
+    background-image: url('bus2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
