@@ -2,7 +2,7 @@
 const loginForm = document.querySelector('form');
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
-const loginButton = document.querySelector('.login-btn');
+const loginButton = document.querySelector('.login');
 
 // Handle form submission
 loginForm.addEventListener('submit', (event) => {

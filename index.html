@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Bus Reservation System</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <script src="index.js" defer></script> 
 </head>
 <body>
-    <div id="login">
-        <div class="logo">
-            <img src="logo.png" alt="Bus Logo" class="bus-image">
+    <header class="header">
+        <h1>Bus Reservation System</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#bookings">My Bookings</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <main>
+        <div class="search-container">
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="text" id="from" required>
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date of Journey:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="search-btn">Search Buses</button>
+                </div>
+            </form>
         </div>
-    <h1>LogIn</h1>
-    <form>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username">
-        
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-        <button type="submit">Login</button>
-       
-    </form>
-    <p>Don't have an account <a class="hover" href="/signup">SignUp</a></p>
-    <p><a class="hover" href="/forget-password">Forget Password</a></p>
-</div> 
+
+        <div class="popular-routes">
+            <h2>Popular Routes</h2>
+            <div class="route-cards" id="routeCards">
+                <!-- Routes will be added dynamically -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Bus Reservation System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
