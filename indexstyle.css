@@ -8,6 +8,8 @@
 
 .header {
     background-image: url('bus2.jpg');
+    background-size: contain;
+    background-position: center;
     color: white;
     padding: 1rem;
     text-align: center;
