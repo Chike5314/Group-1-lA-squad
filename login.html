@@ -3,26 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Signup Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Select the password field and toggle button
+            const passwordField = document.getElementById("password");
+            const toggleButton = document.getElementById("togglePassword");
+
+            // Add an event listener to toggle the password visibility
+            toggleButton.addEventListener("click", () => {
+                // Check the current type of the password field
+                if (passwordField.type === "password") {
+                    passwordField.type = "text"; // Change to text to show the password
+                    toggleButton.textContent = "Hide"; // Update button text
+                } else {
+                    passwordField.type = "password"; // Change back to password
+                    toggleButton.textContent = "Show"; // Update button text
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-    <div id="login">
-        <div class="logo">
-            <img src="logo.png" alt="Bus Logo" class="bus-image">
+    <div class="container">
+        <div class="logo">GLIDEBOOK</div>
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your Email" required autocomplete="email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="current-password">
+                <button type="button" id="togglePassword">Show</button>
+            </div>
+            <button type="submit" class="signup-btn" name="login"">Login</button>
+        </form>
+        <div class="login-link">
+            Don't Have an account? <a href="signup.html">Sign Up</a>
         </div>
-    <h1>Login</h1>
-    <form>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-        <button type="submit">Login</button>
-       
-    </form>
-    <p>Don't have an account <a class="hover" href="signup.html">SignUp</a></p>
-    <p><a class="hover" href="forgot password.html">Forget Password</a></p>
-</div> 
+        <div class="login-link">
+            Forgot Password? <a href="forgot-password.html">Forgot Password</a>
+        </div>
+    </div>
 </body>
 </html>

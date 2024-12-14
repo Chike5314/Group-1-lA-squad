@@ -39,7 +39,7 @@ const togglePasswordVisibility = () => {
 // Add a button for toggling password visibility dynamically
 const passwordFieldContainer = passwordInput.parentElement;
 const toggleButton = document.createElement('button');
-<-- toggleButton.type = 'button'; // Prevent form submission
+< -- toggleButton.type = 'button'; // Prevent form submission
 passwordFieldContainer.appendChild(toggleButton);
 
 toggleButton.addEventListener('click', () => {
