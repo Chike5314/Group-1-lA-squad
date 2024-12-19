@@ -1,0 +1,20 @@
+{
+  "name": "group-1-la-squad",
+  "version": "1.0.0",
+  "description": "This project is to help people to book their tickets from their phones, check out on the agency vacancy status, your reservation position and more. A ticket being generated for your booking.\r Offering a seamless booking of tickets and eventually a seamless travel, is the reason why \"glidebook\" exist.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5"
+  }
+}
